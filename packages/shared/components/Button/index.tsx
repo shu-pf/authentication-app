@@ -1,52 +1,24 @@
 import React from "react";
-import "./button.css";
+import * as Styled from "./index.style";
 
 interface ButtonProps {
   /**
-   * Is this the principal call to action on the page?
+   * ボタンの中身
    */
-  primary?: boolean;
+  children: string;
   /**
-   * What background color to use
-   */
-  backgroundColor?: string;
-  /**
-   * How large should the button be?
-   */
-  size?: "small" | "medium" | "large";
-  /**
-   * Button contents
-   */
-  label: string;
-  /**
-   * Optional click handler
+   * オプションのクリックハンドラ
    */
   onClick?: () => void;
 }
 
 /**
- * Primary UI component for user interaction
+ * ユーザーとのインタラクションを実現するための主要なUIコンポーネント
  */
-export const Button = ({
-  primary = false,
-  size = "medium",
-  backgroundColor,
-  label,
-  ...props
-}: ButtonProps) => {
-  const mode = primary
-    ? "storybook-button--primary"
-    : "storybook-button--secondary";
+export const Button: React.FC<ButtonProps> = ({ children, ...props }) => {
   return (
-    <button
-      type="button"
-      className={["storybook-button", `storybook-button--${size}`, mode].join(
-        " "
-      )}
-      style={{ backgroundColor }}
-      {...props}
-    >
-      {label}
-    </button>
+    <Styled.Button type="button" {...props}>
+      {children}
+    </Styled.Button>
   );
 };

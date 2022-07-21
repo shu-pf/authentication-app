@@ -1,3 +1,6 @@
+import { ThemeProvider } from "@emotion/react";
+import { theme } from "../styles/theme";
+
 // リセットCSS
 import "ress";
 
@@ -10,3 +13,11 @@ export const parameters = {
     },
   },
 };
+
+export const decorators = [
+  (Story) => (
+    <ThemeProvider theme={theme}>
+      <Story />
+    </ThemeProvider>
+  ),
+];
