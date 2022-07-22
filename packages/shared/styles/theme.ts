@@ -1,4 +1,6 @@
-export const theme = {
+import { Theme } from "@emotion/react";
+
+export const theme: Theme = {
   colors: {
     // このUIで基調となるメインカラー、塗りやテキストに使います。
     mainPrimary: "#2F80ED",
