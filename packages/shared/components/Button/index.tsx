@@ -1,11 +1,19 @@
 import React from "react";
 import * as Styled from "./index.style";
 
-interface ButtonProps {
+export interface ButtonProps extends React.ComponentProps<"button"> {
   /**
    * ボタンの中身
    */
   children: string;
+  /**
+   * ボタンのスタイル
+   */
+  variant?: "primary" | "secondary";
+  /**
+   * ボタンの横幅
+   */
+  width?: string;
   /**
    * オプションのクリックハンドラ
    */
