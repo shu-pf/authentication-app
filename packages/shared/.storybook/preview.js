@@ -1,5 +1,6 @@
-import { ThemeProvider } from "@emotion/react";
+import { Global, ThemeProvider } from "@emotion/react";
 import { theme } from "../styles/theme";
+import { GlobalStyle } from "../styles/globals";
 
 // リセットCSS
 import "ress";
@@ -17,6 +18,7 @@ export const parameters = {
 export const decorators = [
   (Story) => (
     <ThemeProvider theme={theme}>
+      <Global styles={GlobalStyle} />
       <Story />
     </ThemeProvider>
   ),
