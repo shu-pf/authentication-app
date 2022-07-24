@@ -14,11 +14,12 @@ const Template: ComponentStory<typeof TextInputWithIcon> = (args) => (
 
 export const Default = Template.bind({});
 Default.args = {
+  iconName: "Email",
   placeholder: "Email",
 };
 
 export const Fill = Template.bind({});
 Fill.args = {
-  placeholder: "Email",
+  iconName: "Email",
   value: "user1@example.com",
 };

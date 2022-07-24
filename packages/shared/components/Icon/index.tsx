@@ -27,11 +27,11 @@ export interface IconProps {
   /**
    * 表示色
    */
-  color: IconContext["color"];
+  color?: IconContext["color"];
   /**
    * サイズ
    */
-  size: IconContext["size"];
+  size?: IconContext["size"];
 }
 
 /**
