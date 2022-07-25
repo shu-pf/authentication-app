@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { Button } from "shared/components";
+import { HomeContainer } from "components/containers";
 
 const Home: NextPage = () => {
   return (
@@ -11,7 +11,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Button>ボタン</Button>
+        <HomeContainer />
       </main>
     </div>
   );
