@@ -8,6 +8,10 @@ export interface TextInputWithIconProps extends React.ComponentProps<"input"> {
    * アイコンの種類
    */
   iconName: IconProps["name"];
+  /**
+   * 幅
+   */
+  width?: string;
 }
 
 /**
