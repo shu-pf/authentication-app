@@ -15,6 +15,11 @@ export const Title = styled.h1(({ theme }) => ({
 
 export const Body = styled.div(({ theme }) => ({
   color: theme.colors.basePrimary,
-  marginBottom: "34.5px",
   ...theme.typographies.body,
+}));
+
+export const Caption = styled.div(({ theme }) => ({
+  textAlign: "center",
+  color: theme.colors.baseQuaternary,
+  ...theme.typographies.caption,
 }));
