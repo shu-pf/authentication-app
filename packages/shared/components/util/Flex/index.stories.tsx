@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
 import { Flex } from ".";
-import { IconButton } from "../IconButton";
+import { IconButton } from "../../ui/IconButton";
 
 export default {
   component: Flex,

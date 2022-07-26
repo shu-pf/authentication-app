@@ -1,11 +1,6 @@
 import * as Styled from "./index.style";
-import {
-  Button,
-  Flex,
-  IconButton,
-  Spacer,
-  TextInputWithIcon,
-} from "shared/components/ui";
+import { Button, IconButton, TextInputWithIcon } from "shared/components/ui";
+import { Flex, Spacer } from "shared/components/util";
 import Link from "next/link";
 
 export const HomeContainer: React.FC = () => {
