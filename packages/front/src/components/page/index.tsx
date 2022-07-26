@@ -34,7 +34,7 @@ export const HomeContainer: React.FC = () => {
       </Flex>
       <Spacer height="27px" />
       <Styled.Caption>
-        Already a member?{" "}
+        Already a member?
         <Link href="/login">
           <Styled.Link>Login</Styled.Link>
         </Link>
