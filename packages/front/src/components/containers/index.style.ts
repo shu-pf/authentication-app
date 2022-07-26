@@ -23,3 +23,8 @@ export const Caption = styled.div(({ theme }) => ({
   color: theme.colors.baseQuaternary,
   ...theme.typographies.caption,
 }));
+
+export const Link = styled.span(({ theme }) => ({
+  color: theme.colors.baseLink,
+  cursor: "pointer",
+}));

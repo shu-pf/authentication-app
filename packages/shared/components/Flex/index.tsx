@@ -10,6 +10,10 @@ export interface FlexProps extends React.ComponentProps<"div"> {
    * gap は CSS のプロパティで、行や列の間のすき間 (溝) を定義します。これは row-gap および column-gap の一括指定です。
    */
   gap?: string;
+  /**
+   * 中央寄せをするか
+   */
+  justifyContentCenter?: boolean;
 }
 
 /**
