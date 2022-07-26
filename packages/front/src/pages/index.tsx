@@ -2,7 +2,7 @@ import type { ReactElement } from "react";
 import Head from "next/head";
 import { HomeContainer } from "components/containers";
 import type { NextPageWithLayout } from "./_app";
-import { AuthLayout } from "components/layout/AuthLayout";
+import { AuthLayout } from "shared/components/layout/AuthLayout";
 
 const Home: NextPageWithLayout = () => {
   return (
