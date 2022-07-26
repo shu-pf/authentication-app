@@ -10,7 +10,7 @@ import Link from "next/link";
 
 export const HomeContainer: React.FC = () => {
   return (
-    <Styled.Container>
+    <>
       <Styled.Title>
         Join thousands of learners from around the world
       </Styled.Title>
@@ -44,6 +44,6 @@ export const HomeContainer: React.FC = () => {
           <Styled.Link>Login</Styled.Link>
         </Link>
       </Styled.Caption>
-    </Styled.Container>
+    </>
   );
 };
