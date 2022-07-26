@@ -5,7 +5,7 @@ import {
   IconButton,
   Spacer,
   TextInputWithIcon,
-} from "shared/components";
+} from "shared/components/ui";
 import Link from "next/link";
 
 export const HomeContainer: React.FC = () => {
