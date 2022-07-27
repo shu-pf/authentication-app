@@ -3,26 +3,21 @@ import { Button, IconButton, TextInputWithIcon } from "shared/components/ui";
 import { Flex, Spacer } from "shared/components/util";
 import Link from "next/link";
 
-export const SignUpContainer: React.FC = () => {
+export const LoginContainer: React.FC = () => {
   return (
     <>
-      <Styled.Title>
-        Join thousands of learners from around the world
-      </Styled.Title>
-      <Styled.Body>
-        Master web development by making real-life projects. There are multiple
-        paths for you to choose
-      </Styled.Body>
-      <Spacer height="34.5px" />
+      <Styled.Title>Login</Styled.Title>
+      <Spacer height="27.25px" />
       <TextInputWithIcon width="100%" iconName="Email" placeholder="Email" />
       <Spacer height="14.5px" />
       <TextInputWithIcon
         width="100%"
         iconName="Password"
         placeholder="Password"
+        type="password"
       />
       <Spacer height="22.5px" />
-      <Button width="100%">Start coding now</Button>
+      <Button width="100%">Login</Button>
       <Spacer height="31.5px" />
       <Styled.Caption>or continue with these social profile</Styled.Caption>
       <Spacer height="22.5px" />
@@ -35,8 +30,8 @@ export const SignUpContainer: React.FC = () => {
       <Spacer height="27px" />
       <Styled.Caption>
         Already a member?{" "}
-        <Link href="/auth/login">
-          <Styled.Link>Login</Styled.Link>
+        <Link href="/auth/sign-up">
+          <Styled.Link>Register</Styled.Link>
         </Link>
       </Styled.Caption>
     </>
