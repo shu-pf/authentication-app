@@ -1,10 +1,10 @@
 import type { ReactElement } from "react";
 import Head from "next/head";
-import { HomeContainer } from "components/page";
-import type { NextPageWithLayout } from "./_app";
+import { SignUpContainer } from "components/page/auth/sign-up";
+import type { NextPageWithLayout } from "../../_app";
 import { AuthLayout } from "shared/components/layout/AuthLayout";
 
-const Home: NextPageWithLayout = () => {
+const SignUp: NextPageWithLayout = () => {
   return (
     <>
       <Head>
@@ -13,14 +13,14 @@ const Home: NextPageWithLayout = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <HomeContainer />
+        <SignUpContainer />
       </main>
     </>
   );
 };
 
-Home.getLayout = function getLayout(page: ReactElement) {
+SignUp.getLayout = function getLayout(page: ReactElement) {
   return <AuthLayout>{page}</AuthLayout>;
 };
 
-export default Home;
+export default SignUp;

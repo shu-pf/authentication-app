@@ -3,7 +3,7 @@ import { Button, IconButton, TextInputWithIcon } from "shared/components/ui";
 import { Flex, Spacer } from "shared/components/util";
 import Link from "next/link";
 
-export const HomeContainer: React.FC = () => {
+export const SignUpContainer: React.FC = () => {
   return (
     <>
       <Styled.Title>
