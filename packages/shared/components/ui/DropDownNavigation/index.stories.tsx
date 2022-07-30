@@ -9,7 +9,7 @@ export default {
 } as ComponentMeta<typeof Component>;
 
 export const DropDownNavigation: ComponentStory<typeof Component> = (args) => (
-  <Component userName="Xanthe Neal">
+  <Component {...args}>
     <DropDownContainer>
       <DropDownItem isActive iconName="UserCircle" label="My Profile" />
       <DropDownItem iconName="Group" label="Group Chat" />
@@ -18,3 +18,6 @@ export const DropDownNavigation: ComponentStory<typeof Component> = (args) => (
     </DropDownContainer>
   </Component>
 );
+DropDownNavigation.args = {
+  userName: "Xanthe Neal",
+};

@@ -11,18 +11,25 @@ export interface DropDownNavigationProps {
    * ドロップダウンの中身
    */
   children: React.ReactNode;
+  /**
+   * 開閉ボタン
+   */
+  onClick?: () => void;
 }
 
 export const DropDownNavigation: React.FC<DropDownNavigationProps> = ({
   userName,
   children,
+  onClick,
 }) => {
   return (
-    <Styled.Content>
-      <Icon name="UserCircle" color="#333333" size="32px" />
-      <Styled.UserName>{userName}</Styled.UserName>
-      <Icon name="AngleDown" color="#333333" size="24px" />
+    <Styled.Container>
+      <Styled.Button onClick={onClick}>
+        <Icon name="UserCircle" color="#333333" size="32px" />
+        <Styled.UserName>{userName}</Styled.UserName>
+        <Icon name="AngleDown" color="#333333" size="24px" />
+      </Styled.Button>
       {children}
-    </Styled.Content>
+    </Styled.Container>
   );
 };

@@ -1,11 +1,14 @@
 import styled from "@emotion/styled";
 
-export const Content = styled.div({
+export const Container = styled.div({
   position: "relative",
+  width: "fit-content",
+});
+
+export const Button = styled.button({
   display: "flex",
   alignItems: "center",
   gap: "11px",
-  width: "fit-content",
 });
 
 export const UserName = styled.div({
