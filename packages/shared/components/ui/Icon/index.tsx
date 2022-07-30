@@ -9,6 +9,7 @@ import {
   FaGithub,
   FaAngleDown,
   FaAngleUp,
+  FaUserCircle,
 } from "react-icons/fa";
 import { IconContext } from "react-icons";
 
@@ -21,6 +22,7 @@ const Icons = {
   Github: FaGithub,
   AngleDown: FaAngleDown,
   AngleUp: FaAngleUp,
+  UserCircle: FaUserCircle,
 } as const;
 
 export interface IconProps {
