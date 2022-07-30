@@ -1,16 +1,13 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { DropDownNavigation as Component } from ".";
+import { DropDownNavigation as Component, DropDownContainer } from ".";
 
 export default {
   component: Component,
 } as ComponentMeta<typeof Component>;
 
-const Template: ComponentStory<typeof Component> = (args) => (
-  <Component {...args} />
+export const DropDownNavigation: ComponentStory<typeof Component> = (args) => (
+  <Component userName="Xanthe Neal">
+    <DropDownContainer>テスト</DropDownContainer>
+  </Component>
 );
-
-export const DropDownNavigation = Template.bind({});
-DropDownNavigation.args = {
-  userName: "Xanthe Neal",
-};

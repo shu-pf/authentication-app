@@ -1,21 +1,28 @@
-import { Content, UserName } from "./index.style";
+import * as Styled from "./index.style";
 import { Icon } from "../Icon";
+export { DropDownContainer } from "./DropDownContainer";
 
 export interface DropDownNavigationProps {
   /**
    * ユーザー名
    */
   userName: string;
+  /**
+   * ドロップダウンの中身
+   */
+  children: React.ReactNode;
 }
 
 export const DropDownNavigation: React.FC<DropDownNavigationProps> = ({
   userName,
+  children,
 }) => {
   return (
-    <Content>
+    <Styled.Content>
       <Icon name="UserCircle" color="#000" size="32px" />
-      <UserName>{userName}</UserName>
+      <Styled.UserName>{userName}</Styled.UserName>
       <Icon name="AngleDown" color="#000" size="24px" />
-    </Content>
+      {children}
+    </Styled.Content>
   );
 };

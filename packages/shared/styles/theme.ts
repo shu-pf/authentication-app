@@ -11,6 +11,7 @@ export const theme: Theme = {
     baseWhite: "#FFFFFF",
     bgPrimary: "#FFFFFF",
     separateContents: "#BDBDBD",
+    overlayShadow: "rgba(0, 0, 0, 0.05)",
   },
   typographies: {
     h1: {

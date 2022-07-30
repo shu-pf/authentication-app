@@ -25,6 +25,7 @@ declare module "@emotion/react" {
       separateContents: string;
       // information: エラーや成功などを知らせる時使います。（マテリアルカラー表参考）
       // overlay: 背景やオブジェクトに重ねる色として使います。
+      overlayShadow: string;
       // unique: イレギュラーなケースで、特定の機能やページで使われる色です。
     };
     typographies: {
