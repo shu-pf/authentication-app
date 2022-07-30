@@ -9,15 +9,16 @@ export default {
 } as ComponentMeta<typeof Component>;
 
 export const DropDownNavigation: ComponentStory<typeof Component> = (args) => (
-  <Component {...args}>
+  <Component {...args}></Component>
+);
+DropDownNavigation.args = {
+  userName: "Xanthe Neal",
+  children: (
     <DropDownContainer>
       <DropDownItem isActive iconName="UserCircle" label="My Profile" />
       <DropDownItem iconName="Group" label="Group Chat" />
       <Divider />
       <DropDownItem iconName="Logout" label="Logout" color="#EB5757" />
     </DropDownContainer>
-  </Component>
-);
-DropDownNavigation.args = {
-  userName: "Xanthe Neal",
+  ),
 };
