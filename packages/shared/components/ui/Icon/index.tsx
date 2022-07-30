@@ -43,7 +43,8 @@ export interface IconProps {
 }
 
 /**
- * アイコンコンポーネント
+ * アイコンを描画するコンポーネント
+ * (react-iconsライブラリを使用)
  */
 export const Icon: React.FC<IconProps> = ({ name, color, size }) => {
   const Icon = Icons[name];

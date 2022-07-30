@@ -1,22 +1,22 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import { Spacer } from ".";
+import { Spacer as Component } from ".";
 
 export default {
-  component: Spacer,
+  component: Component,
   argTypes: {},
-} as ComponentMeta<typeof Spacer>;
+} as ComponentMeta<typeof Component>;
 
-const Template: ComponentStory<typeof Spacer> = (args) => (
+const Template: ComponentStory<typeof Component> = (args) => (
   <>
     <div>要素1</div>
-    <Spacer {...args} />
+    <Component {...args} />
     <div>要素2</div>
   </>
 );
 
-export const Default = Template.bind({});
-Default.args = {
+export const Spacer = Template.bind({});
+Spacer.args = {
   height: "30px",
 };

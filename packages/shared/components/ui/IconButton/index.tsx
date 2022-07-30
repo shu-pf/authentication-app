@@ -15,7 +15,7 @@ export interface IconButtonProps extends React.ComponentProps<"button"> {
 }
 
 /**
- * アイコンのボタン
+ * アイコン付きのボタンを描画するコンポーネント
  */
 export const IconButton: React.FC<IconButtonProps> = ({
   iconName,

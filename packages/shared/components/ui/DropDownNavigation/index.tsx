@@ -17,6 +17,9 @@ export interface DropDownNavigationProps {
   onClick?: () => void;
 }
 
+/**
+ * ヘッダーに使用するナビゲーションのコンポーネント
+ */
 export const DropDownNavigation: React.FC<DropDownNavigationProps> = ({
   userName,
   children,

@@ -1,18 +1,18 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import { IconButton } from ".";
+import { IconButton as Component } from ".";
 
 export default {
-  component: IconButton,
+  component: Component,
   argTypes: {},
-} as ComponentMeta<typeof IconButton>;
+} as ComponentMeta<typeof Component>;
 
-const Template: ComponentStory<typeof IconButton> = (args) => (
-  <IconButton {...args} />
+const Template: ComponentStory<typeof Component> = (args) => (
+  <Component {...args} />
 );
 
-export const Default = Template.bind({});
-Default.args = {
+export const IconButton = Template.bind({});
+IconButton.args = {
   iconName: "Github",
 };

@@ -1,24 +1,24 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import { Flex } from ".";
+import { Flex as Component } from ".";
 import { IconButton } from "../../ui/IconButton";
 
 export default {
-  component: Flex,
+  component: Component,
   argTypes: {},
-} as ComponentMeta<typeof Flex>;
+} as ComponentMeta<typeof Component>;
 
-const Template: ComponentStory<typeof Flex> = (args) => (
-  <Flex {...args}>
+const Template: ComponentStory<typeof Component> = (args) => (
+  <Component {...args}>
     <IconButton iconName="Google" />
     <IconButton iconName="Facebook" />
     <IconButton iconName="Twitter" />
     <IconButton iconName="Github" />
-  </Flex>
+  </Component>
 );
 
-export const Default = Template.bind({});
-Default.args = {
+export const Flex = Template.bind({});
+Flex.args = {
   gap: "20px",
 };

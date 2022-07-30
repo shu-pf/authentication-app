@@ -1,7 +1,7 @@
 import React from "react";
 
 /**
- * サイトのロゴ
+ * サイトのロゴを描画するコンポーネント
  */
 export const Logo: React.FC = () => {
   return (
