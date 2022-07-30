@@ -11,3 +11,6 @@ const Template: ComponentStory<typeof Component> = (args) => (
 );
 
 export const DropDownNavigation = Template.bind({});
+DropDownNavigation.args = {
+  userName: "Xanthe Neal",
+};
