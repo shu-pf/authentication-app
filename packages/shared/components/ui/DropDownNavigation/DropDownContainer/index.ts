@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-export const DropDownContainer = styled.div(({ theme }) => ({
+export const DropDownContainer = styled.nav(({ theme }) => ({
   position: "absolute",
   right: "0",
   top: "40px",

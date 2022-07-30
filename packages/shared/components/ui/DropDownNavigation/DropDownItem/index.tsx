@@ -17,7 +17,7 @@ export interface DropDownItemProps {
   /**
    * 表示色
    */
-  color: string;
+  color?: string;
   /**
    * 選択した際のイベント
    */
