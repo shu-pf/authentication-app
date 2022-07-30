@@ -15,6 +15,10 @@ export interface DropDownItemProps {
    */
   iconName: IconProps["name"];
   /**
+   * 表示色
+   */
+  color: string;
+  /**
    * 選択した際のイベント
    */
   onClick?: () => void;
@@ -28,11 +32,12 @@ export const DropDownItem: React.FC<DropDownItemProps> = ({
   isActive,
   onClick,
   iconName,
+  color,
 }) => {
   return (
     <Styled.Container isActive={isActive} onClick={onClick}>
-      <Icon name={iconName} size="20px" />
-      <Styled.Label>{label}</Styled.Label>
+      <Icon name={iconName} size="20px" color={color} />
+      <Styled.Label color={color}>{label}</Styled.Label>
     </Styled.Container>
   );
 };

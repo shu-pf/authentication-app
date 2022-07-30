@@ -22,3 +22,10 @@ Active.args = {
   iconName: "UserCircle",
   isActive: true,
 };
+
+export const Red = Template.bind({});
+Red.args = {
+  label: "Logout",
+  color: "#EB5757",
+  iconName: "Logout",
+};

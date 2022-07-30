@@ -13,11 +13,13 @@ export const Container = styled.a<Pick<DropDownItemProps, "isActive">>(
   })
 );
 
-export const Label = styled.div(({ theme }) => ({
-  marginLeft: "10px",
-  color: "#4F4F4F",
-  fontWeight: 500,
-  fontSize: "12px",
-  lineHeight: "16.34px",
-  letterSpacing: "-3.5%",
-}));
+export const Label = styled.div<Pick<DropDownItemProps, "color">>(
+  ({ color = "#4F4F4F" }) => ({
+    marginLeft: "10px",
+    color: color,
+    fontWeight: 500,
+    fontSize: "12px",
+    lineHeight: "16.34px",
+    letterSpacing: "-3.5%",
+  })
+);
