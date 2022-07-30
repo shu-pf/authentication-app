@@ -1,11 +1,21 @@
+import Link from "next/link";
 import { Logo } from "../../../ui/Logo";
 import * as Styled from "./index.style";
 
-export const Header: React.FC = () => {
+interface HeaderProps {
+  navigation: React.ReactNode;
+}
+
+/**
+ * ヘッダーのコンポーネント
+ */
+export const Header: React.FC<HeaderProps> = ({ navigation }) => {
   return (
     <Styled.Content>
-      <Logo />
-      <Styled.Regular>devChallenges.io</Styled.Regular>
+      <Link href="/">
+        <Logo />
+      </Link>
+      {navigation}
     </Styled.Content>
   );
 };
