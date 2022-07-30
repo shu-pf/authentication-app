@@ -7,6 +7,8 @@ import {
   FaFacebookSquare,
   FaTwitter,
   FaGithub,
+  FaAngleDown,
+  FaAngleUp,
 } from "react-icons/fa";
 import { IconContext } from "react-icons";
 
@@ -17,6 +19,8 @@ const Icons = {
   Facebook: FaFacebookSquare,
   Twitter: FaTwitter,
   Github: FaGithub,
+  AngleDown: FaAngleDown,
+  AngleUp: FaAngleUp,
 } as const;
 
 export interface IconProps {
