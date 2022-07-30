@@ -13,4 +13,5 @@ export const UserName = styled.div({
   fontSize: "12px",
   lineHeight: "16.34px",
   letterSpacing: "-3.5%",
+  color: "#333333",
 });
