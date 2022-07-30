@@ -12,8 +12,8 @@ const Template: ComponentStory<typeof Component> = (args) => (
 
 export const Default = Template.bind({});
 Default.args = {
-  label: "My Profile",
-  iconName: "UserCircle",
+  label: "Group Chat",
+  iconName: "Group",
 };
 
 export const Active = Template.bind({});

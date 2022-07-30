@@ -1,7 +1,7 @@
 import React from "react";
 // Material Design icons
 // https://react-icons.github.io/react-icons/icons?name=md
-import { MdEmail, MdVpnKey } from "react-icons/md";
+import { MdEmail, MdVpnKey, MdGroup } from "react-icons/md";
 import {
   FaGoogle,
   FaFacebookSquare,
@@ -23,6 +23,7 @@ const Icons = {
   AngleDown: FaAngleDown,
   AngleUp: FaAngleUp,
   UserCircle: FaUserCircle,
+  Group: MdGroup,
 } as const;
 
 export interface IconProps {
