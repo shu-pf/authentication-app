@@ -6,6 +6,9 @@ interface AuthLayoutProps {
   children: ReactElement;
 }
 
+/**
+ * ログイン画面・新規登録画面で使用するレイアウトです。
+ */
 export const AuthLayout = ({ children }: AuthLayoutProps) => {
   return (
     <Styled.Container>
