@@ -21,6 +21,7 @@ declare module "@emotion/react" {
       baseLink: string;
       // bg: 背景色に使います。
       bgPrimary: string;
+      bgActive: string;
       // separate: 区切り線や囲み線に使います。
       separateContents: string;
       // information: エラーや成功などを知らせる時使います。（マテリアルカラー表参考）
