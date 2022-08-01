@@ -12,10 +12,6 @@ export interface DropDownNavigationProps {
    * ドロップダウンの中身
    */
   children: React.ReactNode;
-  /**
-   * 開閉ボタン
-   */
-  onClick?: () => void;
 }
 
 /**
@@ -24,7 +20,6 @@ export interface DropDownNavigationProps {
 export const DropDownNavigation: React.FC<DropDownNavigationProps> = ({
   userName,
   children,
-  onClick,
 }) => {
   const [navigationDisplayed, setNavigationDisplayed] = useState(false);
 
