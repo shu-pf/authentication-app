@@ -19,4 +19,6 @@ DefaultLayout.args = {
     // @ts-ignore argsに値を代入しているので未定義になるはずはないが、未定義と定義されてエラーになっている
     <DropDownNavigation {...DropDownNavigation.args}></DropDownNavigation>
   ),
+  title: "Personal info",
+  subTitle: "Basic info, like your name and photo",
 };

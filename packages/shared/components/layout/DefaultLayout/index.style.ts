@@ -1,10 +1,8 @@
 import styled from "@emotion/styled";
 
 export const Container = styled.div({
-  height: "100vh",
   display: "flex",
   alignItems: "center",
-  justifyContent: "center",
   flexDirection: "column",
 });
 
@@ -16,4 +14,12 @@ export const Content = styled.div({
 export const Main = styled.div(({ theme }) => ({
   border: `1px solid ${theme.colors.separateContents}`,
   borderRadius: "24px",
+}));
+
+export const Title = styled.h1(({ theme }) => ({
+  ...theme.typographies.h1,
+}));
+
+export const SubTitle = styled.h2(({ theme }) => ({
+  ...theme.typographies.subTitle,
 }));
