@@ -2,6 +2,7 @@ import * as Styled from "./index.style";
 import { Icon } from "../Icon";
 import { useState } from "react";
 export { DropDownContainer } from "./DropDownContainer";
+export { DropDownItem } from "./DropDownItem";
 
 export interface DropDownNavigationProps {
   /**
