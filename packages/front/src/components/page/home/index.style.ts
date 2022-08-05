@@ -2,6 +2,9 @@ import styled from "@emotion/styled";
 
 export const TitleContainer = styled.div({
   padding: "28px 49px",
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
 });
 
 export const Title = styled.h1(({ theme }) => ({

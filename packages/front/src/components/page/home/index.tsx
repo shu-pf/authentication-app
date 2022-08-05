@@ -1,15 +1,20 @@
-import { Icon } from "shared/components/ui";
-import { Divider } from "shared/components/util";
+import { Button, Icon } from "shared/components/ui";
+import { Divider, Flex } from "shared/components/util";
 import * as Styled from "./index.style";
 
 export const HomeContainer: React.FC = () => {
   return (
     <>
       <Styled.TitleContainer>
-        <Styled.Title>Profile</Styled.Title>
-        <Styled.SubTitle>
-          Some info may be visible to other people
-        </Styled.SubTitle>
+        <div>
+          <Styled.Title>Profile</Styled.Title>
+          <Styled.SubTitle>
+            Some info may be visible to other people
+          </Styled.SubTitle>
+        </div>
+        <Button variant="secondary" width="95.34px" height="38px">
+          Edit
+        </Button>
       </Styled.TitleContainer>
       <Divider />
       <Styled.Row>

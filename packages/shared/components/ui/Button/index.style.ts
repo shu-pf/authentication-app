@@ -15,15 +15,16 @@ const buttonStyles = (theme: Theme) => ({
   },
 });
 
-export const Button = styled.button<Pick<ButtonProps, "variant" | "width">>(
-  ({ variant = "primary", width, theme }) => ({
-    padding: "7.5px",
-    borderRadius: "8px",
-    transition: "0.2s",
-    width,
-    ...buttonStyles(theme)[variant],
-    ":active": {
-      opacity: 0.8,
-    },
-  })
-);
+export const Button = styled.button<
+  Pick<ButtonProps, "variant" | "width" | "height">
+>(({ variant = "primary", width, height, theme }) => ({
+  padding: "7.5px",
+  borderRadius: "8px",
+  transition: "0.2s",
+  width,
+  height,
+  ...buttonStyles(theme)[variant],
+  ":active": {
+    opacity: 0.8,
+  },
+}));

@@ -15,6 +15,10 @@ export interface ButtonProps extends React.ComponentProps<"button"> {
    */
   width?: string;
   /**
+   * ボタンの縦幅
+   */
+  height?: string;
+  /**
    * オプションのクリックハンドラ
    */
   onClick?: () => void;
