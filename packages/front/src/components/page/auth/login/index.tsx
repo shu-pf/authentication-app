@@ -1,13 +1,20 @@
 import * as Styled from "./index.style";
-import { Button, IconButton, TextInputWithIcon } from "shared/components/ui";
+import {
+  Button,
+  IconButton,
+  Logo,
+  TextInputWithIcon,
+} from "shared/components/ui";
 import { Flex, Spacer } from "shared/components/util";
 import Link from "next/link";
 
 export const LoginContainer: React.FC = () => {
   return (
     <>
+      <Logo />
+      <Spacer height="27px" />
       <Styled.Title>Login</Styled.Title>
-      <Spacer height="27.25px" />
+      <Spacer height="27px" />
       <TextInputWithIcon width="100%" iconName="Email" placeholder="Email" />
       <Spacer height="14.5px" />
       <TextInputWithIcon
