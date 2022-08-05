@@ -4,6 +4,7 @@ export const Container = styled.div({
   display: "flex",
   alignItems: "center",
   flexDirection: "column",
+  marginBottom: "24px",
 });
 
 export const Content = styled.div({
