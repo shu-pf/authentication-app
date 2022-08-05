@@ -1,11 +1,18 @@
 import * as Styled from "./index.style";
-import { Button, IconButton, TextInputWithIcon } from "shared/components/ui";
+import {
+  Button,
+  IconButton,
+  TextInputWithIcon,
+  Logo,
+} from "shared/components/ui";
 import { Flex, Spacer } from "shared/components/util";
 import Link from "next/link";
 
 export const SignUpContainer: React.FC = () => {
   return (
     <>
+      <Logo />
+      <Spacer height="27px" />
       <Styled.Title>
         Join thousands of learners from around the world
       </Styled.Title>
