@@ -2,7 +2,7 @@ import type { ReactElement } from "react";
 import Head from "next/head";
 import { HomeContainer } from "components/page/home";
 import type { NextPageWithLayout } from "./_app";
-import { AuthLayout } from "shared/components/layout/AuthLayout";
+import { DefaultLayout } from "shared/components/layout";
 
 const Home: NextPageWithLayout = () => {
   return (
@@ -20,7 +20,15 @@ const Home: NextPageWithLayout = () => {
 };
 
 Home.getLayout = function getLayout(page: ReactElement) {
-  return <AuthLayout>{page}</AuthLayout>;
+  return (
+    <DefaultLayout
+      title="Personal info"
+      subTitle="Basic info, like your name and photo"
+      navigation={<div>test</div>}
+    >
+      {page}
+    </DefaultLayout>
+  );
 };
 
 export default Home;
