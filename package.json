@@ -4,6 +4,7 @@
     "packages/*"
   ],
   "scripts": {
-    "sb": "yarn workspace shared sb"
+    "sb": "yarn workspace shared sb",
+    "dev": "yarn workspace front dev"
   }
 }
