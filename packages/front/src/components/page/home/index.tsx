@@ -1,5 +1,6 @@
+import Link from "next/link";
 import { Button, Icon } from "shared/components/ui";
-import { Divider, Flex } from "shared/components/util";
+import { Divider } from "shared/components/util";
 import * as Styled from "./index.style";
 
 export const HomePage: React.FC = () => {
@@ -12,9 +13,13 @@ export const HomePage: React.FC = () => {
             Some info may be visible to other people
           </Styled.SubTitle>
         </div>
-        <Button variant="secondary" width="95.34px" height="38px">
-          Edit
-        </Button>
+        <Link href="/edit">
+          <a>
+            <Button variant="secondary" width="95.34px" height="38px">
+              Edit
+            </Button>
+          </a>
+        </Link>
       </Styled.TitleContainer>
       <Divider />
       <Styled.Row>
