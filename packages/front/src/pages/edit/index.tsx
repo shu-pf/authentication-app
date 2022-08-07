@@ -1,11 +1,10 @@
 import type { ReactElement } from "react";
 import Head from "next/head";
-import { HomeContainer } from "components/page/home";
 import type { NextPageWithLayout } from ".././_app";
 import { SimpleLayout } from "shared/components/layout";
 import { HeaderNavigation } from "components/layout/HeaderNavigation";
 import { Anchor } from "shared/components/ui";
-import Link from "next/link";
+import { EditPage } from "components/page/edit";
 
 const Home: NextPageWithLayout = () => {
   return (
@@ -16,7 +15,7 @@ const Home: NextPageWithLayout = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <HomeContainer />
+        <EditPage />
       </main>
     </>
   );

@@ -8,7 +8,7 @@ import {
 import { Flex, Spacer } from "shared/components/util";
 import Link from "next/link";
 
-export const SignUpContainer: React.FC = () => {
+export const SignUpPage: React.FC = () => {
   return (
     <>
       <Logo />

@@ -1,6 +1,6 @@
 import type { ReactElement } from "react";
 import Head from "next/head";
-import { SignUpContainer } from "components/page/auth/sign-up";
+import { SignUpPage } from "components/page/auth/sign-up";
 import type { NextPageWithLayout } from "../../_app";
 import { AuthLayout } from "shared/components/layout/AuthLayout";
 
@@ -13,7 +13,7 @@ const SignUp: NextPageWithLayout = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <SignUpContainer />
+        <SignUpPage />
       </main>
     </>
   );

@@ -2,7 +2,7 @@ import { Button, Icon } from "shared/components/ui";
 import { Divider, Flex } from "shared/components/util";
 import * as Styled from "./index.style";
 
-export const HomeContainer: React.FC = () => {
+export const HomePage: React.FC = () => {
   return (
     <>
       <Styled.TitleContainer>
