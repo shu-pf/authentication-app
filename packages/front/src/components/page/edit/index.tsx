@@ -1,3 +1,3 @@
 export const EditPage: React.FC = () => {
-  return <>EditPage</>;
+  return <main>EditPage</main>;
 };

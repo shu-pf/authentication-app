@@ -10,7 +10,7 @@ import Link from "next/link";
 
 export const LoginPage: React.FC = () => {
   return (
-    <>
+    <main>
       <Logo />
       <Spacer height="27px" />
       <Styled.Title>Login</Styled.Title>
@@ -41,6 +41,6 @@ export const LoginPage: React.FC = () => {
           <Styled.Link>Register</Styled.Link>
         </Link>
       </Styled.Caption>
-    </>
+    </main>
   );
 };

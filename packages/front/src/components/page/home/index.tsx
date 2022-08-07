@@ -4,7 +4,7 @@ import * as Styled from "./index.style";
 
 export const HomePage: React.FC = () => {
   return (
-    <>
+    <main>
       <Styled.TitleContainer>
         <div>
           <Styled.Title>Profile</Styled.Title>
@@ -50,6 +50,6 @@ export const HomePage: React.FC = () => {
         <Styled.RowTitle>PASSWORD</Styled.RowTitle>
         <Styled.RowContent>************</Styled.RowContent>
       </Styled.Row>
-    </>
+    </main>
   );
 };
