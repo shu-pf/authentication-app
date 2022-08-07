@@ -1,10 +1,10 @@
 import styled from "@emotion/styled";
 
-export const Content = styled.div(({ theme }) => ({
+export const Content = styled.div({
   display: "flex",
   justifyContent: "space-between",
   marginTop: "12px",
-}));
+});
 
 export const Regular = styled.span(({ theme }) => ({
   color: theme.colors.baseQuaternary,
