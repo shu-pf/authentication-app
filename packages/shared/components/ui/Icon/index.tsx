@@ -10,6 +10,7 @@ import {
   FaAngleDown,
   FaAngleUp,
   FaUserCircle,
+  FaAngleLeft,
 } from "react-icons/fa";
 import { IconContext } from "react-icons";
 
@@ -25,6 +26,7 @@ const Icons = {
   UserCircle: FaUserCircle,
   Group: MdGroup,
   Logout: MdOutlineLogout,
+  AngleLeft: FaAngleLeft,
 } as const;
 
 export interface IconProps {
