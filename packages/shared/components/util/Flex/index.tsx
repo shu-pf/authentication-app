@@ -14,6 +14,10 @@ export interface FlexProps extends React.ComponentProps<"div"> {
    * 中央寄せをするか
    */
   justifyContentCenter?: boolean;
+  /**
+   * 中央寄せするか
+   */
+  alignItemsCenter?: boolean;
 }
 
 /**
