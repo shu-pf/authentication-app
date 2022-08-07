@@ -17,6 +17,7 @@ export const EditPage: React.FC = () => {
         <Spacer width="27.5px" />
         <Styled.PhotoLabel>CHANGE PHOTO</Styled.PhotoLabel>
       </Flex>
+      <Spacer height="32px" />
     </Styled.Main>
   );
 };
