@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-export const A = styled.a(({ theme }) => ({
+export const Button = styled.button(({ theme }) => ({
   color: theme.colors.baseLink,
   textDecoration: "none",
   position: "relative",

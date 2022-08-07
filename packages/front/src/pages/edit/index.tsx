@@ -3,7 +3,7 @@ import Head from "next/head";
 import type { NextPageWithLayout } from ".././_app";
 import { SimpleLayout } from "shared/components/layout";
 import { HeaderNavigation } from "components/layout/HeaderNavigation";
-import { Anchor } from "shared/components/ui";
+import { TextButton } from "shared/components/ui";
 import { EditPage } from "components/page/edit";
 
 const Home: NextPageWithLayout = () => {
@@ -22,7 +22,7 @@ const Home: NextPageWithLayout = () => {
 Home.getLayout = function getLayout(page: ReactElement) {
   return (
     <SimpleLayout
-      header={<Anchor iconName="AngleLeft">Back</Anchor>}
+      header={<TextButton iconName="AngleLeft">Back</TextButton>}
       navigation={<HeaderNavigation />}
     >
       {page}

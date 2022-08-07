@@ -1,14 +1,14 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import { HomeContainer } from ".";
+import { SignUpPage as Component } from ".";
 
 export default {
-  component: HomeContainer,
-} as ComponentMeta<typeof HomeContainer>;
+  component: Component,
+} as ComponentMeta<typeof Component>;
 
-const Template: ComponentStory<typeof HomeContainer> = (args) => (
-  <HomeContainer {...args} />
+const Template: ComponentStory<typeof Component> = (args) => (
+  <Component {...args} />
 );
 
 export const Default = Template.bind({});

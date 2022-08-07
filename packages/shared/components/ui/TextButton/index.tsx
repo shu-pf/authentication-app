@@ -2,7 +2,7 @@ import React from "react";
 import { Icon, IconProps } from "../Icon";
 import * as Styled from "./index.style";
 
-export interface AnchorProps extends React.ComponentProps<"a"> {
+export interface TextButtonProps extends React.ComponentProps<"button"> {
   /**
    * アイコンの種類
    */
@@ -10,19 +10,19 @@ export interface AnchorProps extends React.ComponentProps<"a"> {
 }
 
 /**
- * Anchorコンポーネントを使えば、テーマカラーやタイポグラフィースタイルでアンカーエレメントを簡単にカスタマイズすることができます。
+ * TextButtonコンポーネントを使えば、シンプルなテキストのみのボタンを作ることが出来ます。
  */
-export const Anchor: React.FC<AnchorProps> = ({
+export const TextButton: React.FC<TextButtonProps> = ({
   children,
   iconName,
   ...props
 }) => {
   return (
-    <Styled.A {...props}>
+    <Styled.Button {...props}>
       <Styled.IconWrapper>
         <Icon name={iconName} size="18px" />
       </Styled.IconWrapper>
       <Styled.Label>{children}</Styled.Label>
-    </Styled.A>
+    </Styled.Button>
   );
 };

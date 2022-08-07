@@ -4,4 +4,4 @@ export * from "./Icon";
 export * from "./IconButton";
 export * from "./Logo";
 export * from "./DropDownNavigation";
-export * from "./Anchor";
+export * from "./TextButton";
