@@ -1,4 +1,4 @@
-import { Button, Icon, TextInput } from "shared/components/ui";
+import { Button, Icon, TextArea, TextInput } from "shared/components/ui";
 import { Flex, Spacer } from "shared/components/util";
 import * as Styled from "./index.style";
 
@@ -19,6 +19,8 @@ export const EditPage: React.FC = () => {
       </Flex>
       <Spacer height="32px" />
       <TextInput label="Name" placeholder="Enter your name..." />
+      <Spacer height="24px" />
+      <TextArea label="Bio" placeholder="Enter your Bio..." />
       <Spacer height="24px" />
       <TextInput label="Phone" placeholder="Enter your phone..." />
       <Spacer height="24px" />

@@ -6,3 +6,4 @@ export * from "./Logo";
 export * from "./DropDownNavigation";
 export * from "./TextButton";
 export * from "./TextInput";
+export * from "./TextArea";
