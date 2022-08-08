@@ -6,16 +6,14 @@ import { Spacer } from "../../util";
 interface AuthLayoutProps {
   children: React.ReactNode;
   navigation: React.ReactNode;
-  title: string;
-  subTitle: string;
+  header: React.ReactNode;
 }
 
 /**
  * ログイン後に使用するレイアウトです。
  */
 export const DefaultLayout = ({
-  title,
-  subTitle,
+  header,
   navigation,
   children,
 }: AuthLayoutProps) => {
@@ -23,11 +21,8 @@ export const DefaultLayout = ({
     <>
       <Header navigation={navigation} />
       <Styled.Container>
-        <Spacer height="40px" />
-        <Styled.Title>{title}</Styled.Title>
-        <Styled.SubTitle>{subTitle}</Styled.SubTitle>
-        <Spacer height="44px" />
         <Styled.Content>
+          {header}
           <Styled.Main>{children}</Styled.Main>
           <Footer />
         </Styled.Content>
