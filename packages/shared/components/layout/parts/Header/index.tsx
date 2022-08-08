@@ -13,7 +13,9 @@ export const Header: React.FC<HeaderProps> = ({ navigation }) => {
   return (
     <Styled.Content>
       <Link href="/">
-        <Logo />
+        <a>
+          <Logo />
+        </a>
       </Link>
       {navigation}
     </Styled.Content>

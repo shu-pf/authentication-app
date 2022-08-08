@@ -2,7 +2,7 @@ import type { ReactElement } from "react";
 import Head from "next/head";
 import { HomePage } from "components/page/home";
 import type { NextPageWithLayout } from "./_app";
-import { DefaultLayout } from "shared/components/layout";
+import { DefaultLayout, DefaultTitle } from "shared/components/layout";
 import { HeaderNavigation } from "components/layout/HeaderNavigation";
 
 const Home: NextPageWithLayout = () => {
@@ -21,9 +21,13 @@ const Home: NextPageWithLayout = () => {
 Home.getLayout = function getLayout(page: ReactElement) {
   return (
     <DefaultLayout
-      title="Personal info"
-      subTitle="Basic info, like your name and photo"
       navigation={<HeaderNavigation />}
+      header={
+        <DefaultTitle
+          title="Personal info"
+          subTitle="Basic info, like your name and photo"
+        ></DefaultTitle>
+      }
     >
       {page}
     </DefaultLayout>
