@@ -13,7 +13,7 @@ export interface TextInput extends React.ComponentProps<"input"> {
   /**
    * インプットタイプ
    */
-  type?: "text" | "email";
+  type?: "text" | "email" | "password";
 }
 
 /**
