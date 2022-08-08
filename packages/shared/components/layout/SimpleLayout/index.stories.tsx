@@ -21,8 +21,8 @@ SimpleLayout.args = {
     <DropDownNavigation {...DropDownNavigation.args}></DropDownNavigation>
   ),
   header: (
-    <Anchor iconName="AngleLeft" href="#">
+    <TextButton iconName="AngleLeft" href="#">
       Back
-    </Anchor>
+    </TextButton>
   ),
 };

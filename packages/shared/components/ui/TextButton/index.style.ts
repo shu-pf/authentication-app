@@ -1,15 +1,15 @@
 import styled from "@emotion/styled";
 
 export const Button = styled.button(({ theme }) => ({
-  color: theme.colors.baseLink,
-  textDecoration: "none",
   position: "relative",
+  color: theme.colors.baseLink,
 }));
 
 export const IconWrapper = styled.div({
   position: "absolute",
   top: "50%",
   transform: "translateY(-50%)",
+  // 高さが親要素の高さになるために、アイコンに合わせるために指定
   height: "18px",
 });
 

@@ -1,19 +1,18 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import { TextButton as Component } from ".";
+import { DefaultTitle as Component } from ".";
 
 export default {
   component: Component,
-  argTypes: {},
 } as ComponentMeta<typeof Component>;
 
 const Template: ComponentStory<typeof Component> = (args) => (
   <Component {...args} />
 );
 
-export const TextButton = Template.bind({});
-TextButton.args = {
-  children: "Back",
-  iconName: "AngleLeft",
+export const Default = Template.bind({});
+Default.args = {
+  title: "Personal info",
+  subTitle: "Basic info, like your name and photo",
 };
