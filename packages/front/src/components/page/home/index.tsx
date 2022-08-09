@@ -1,9 +1,16 @@
+import { useAuth0 } from "@auth0/auth0-react";
 import Link from "next/link";
 import { Button, Icon } from "shared/components/ui";
 import { Divider } from "shared/components/util";
 import * as Styled from "./index.style";
 
 export const HomePage: React.FC = () => {
+  const { user, isLoading } = useAuth0();
+
+  if (isLoading) {
+    return <main>Loading...</main>;
+  }
+
   return (
     <main>
       <Styled.TitleContainer>
@@ -48,7 +55,7 @@ export const HomePage: React.FC = () => {
       <Divider />
       <Styled.Row>
         <Styled.RowTitle>EMAIL</Styled.RowTitle>
-        <Styled.RowContent>xanthe.neal@gmail.com</Styled.RowContent>
+        <Styled.RowContent>{user?.email}</Styled.RowContent>
       </Styled.Row>
       <Divider />
       <Styled.Row>
