@@ -22,9 +22,9 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
 
   return (
     <Auth0Provider
-      domain="dev-mkemjxp8.us.auth0.com"
-      clientId="APoDm1UK46dJwrBWeVeSEZqTf8KhKKK0"
-      redirectUri={window.location.origin}
+      domain="devchallenges.jp.auth0.com"
+      clientId="qW7eeaFyJAe3ZmquPkVB3vKG1pUvHjwZ"
+      redirectUri="http://localhost:3000/"
     >
       <ThemeProvider theme={theme}>
         <Global styles={GlobalStyle} />
