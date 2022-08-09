@@ -49,16 +49,16 @@ const server = new ApolloServer({
   csrfPrevention: true,
   cache: "bounded",
   /**
-   * What's up with this embed: true option?
-   * These are our recommended settings for using AS;
-   * they aren't the defaults in AS3 for backwards-compatibility reasons but
-   * will be the defaults in AS4. For production environments, use
-   * ApolloServerPluginLandingPageProductionDefault instead.
+   * このembed: trueのオプションはどうしたんだ？
+   * ASを使用する際の推奨設定です。
+   * AS3では後方互換性のためにデフォルトではありません。
+   * はAS4でのデフォルトになります。本番環境では
+   * 代わりに ApolloServerPluginLandingPageProductionDefault を使用します。
    **/
   plugins: [ApolloServerPluginLandingPageLocalDefault({ embed: true })],
 });
 
 // listen` メソッドは、ウェブサーバーを起動します。
-server.listen().then(({ url }) => {
+exports.handler = server.listen().then(({ url }) => {
   console.log(`🚀  Server ready at ${url}`);
 });
