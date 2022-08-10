@@ -18,7 +18,7 @@ const Home: NextPageWithLayout = () => {
   );
 };
 
-Home.getLayout = function getLayout(page: ReactElement) {
+Home.getLayout = (page: ReactElement) => {
   return (
     <DefaultLayout
       header={<BackTitle></BackTitle>}

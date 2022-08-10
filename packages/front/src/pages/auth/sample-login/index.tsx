@@ -19,7 +19,7 @@ const SignUp: NextPageWithLayout = () => {
   );
 };
 
-SignUp.getLayout = function getLayout(page: ReactElement) {
+SignUp.getLayout = (page: ReactElement) => {
   return <AuthLayout>{page}</AuthLayout>;
 };
 
