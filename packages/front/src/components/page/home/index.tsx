@@ -1,13 +1,27 @@
+import { gql, useQuery } from "@apollo/client";
 import { useAuth0 } from "@auth0/auth0-react";
 import Link from "next/link";
 import { Button, Icon } from "shared/components/ui";
 import { Divider } from "shared/components/util";
 import * as Styled from "./index.style";
 
+const GET_USER = gql`
+  query GetUser {
+    user {
+      name
+      bio
+      phone
+      email
+      photoURL
+    }
+  }
+`;
+
 export const HomePage: React.FC = () => {
+  const { loading, data } = useQuery(GET_USER);
   const { user, isLoading } = useAuth0();
 
-  if (isLoading) {
+  if (isLoading || loading) {
     return <main>Loading...</main>;
   }
 
@@ -32,25 +46,23 @@ export const HomePage: React.FC = () => {
       <Styled.Row>
         <Styled.RowTitle>PHOTO</Styled.RowTitle>
         <Styled.RowContent>
-          <Icon name="UserCircle" size="72px"></Icon>
+          <Icon name="UserCircle" size="72px" />
         </Styled.RowContent>
       </Styled.Row>
       <Divider />
       <Styled.Row>
         <Styled.RowTitle>NAME</Styled.RowTitle>
-        <Styled.RowContent>Xanthe Neal</Styled.RowContent>
+        <Styled.RowContent>{data.user.name}</Styled.RowContent>
       </Styled.Row>
       <Divider />
       <Styled.Row>
         <Styled.RowTitle>BIO</Styled.RowTitle>
-        <Styled.RowContent>
-          I am a software developer and a big fan of devchallenges...
-        </Styled.RowContent>
+        <Styled.RowContent>{data.user.bio}</Styled.RowContent>
       </Styled.Row>
       <Divider />
       <Styled.Row>
         <Styled.RowTitle>PHONE</Styled.RowTitle>
-        <Styled.RowContent>908249274292</Styled.RowContent>
+        <Styled.RowContent>{data.user.phone}</Styled.RowContent>
       </Styled.Row>
       <Divider />
       <Styled.Row>
