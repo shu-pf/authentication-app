@@ -5,6 +5,7 @@
   ],
   "scripts": {
     "sb": "yarn workspace shared sb",
-    "dev": "yarn workspace front dev"
+    "dev": "yarn workspace front dev",
+    "server": "yarn workspace server functions-framework --target=handler"
   }
 }
