@@ -13,12 +13,21 @@ const typeDefs = gql`
     email: String
   }
 
+  input UpdateUserInput {
+    photoURL: String!
+    id: ID
+    name: String!
+    bio: String!
+    phone: String!
+    email: String!
+  }
+
   type Query {
     user: User
   }
 
   type Mutation {
-    updateUser(user: User): User
+    updateUser(data: UpdateUserInput): User
   }
 `;
 
