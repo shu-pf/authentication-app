@@ -16,6 +16,10 @@ const typeDefs = gql`
   type Query {
     user: User
   }
+
+  type Mutation {
+    updateUser(user: User): User
+  }
 `;
 
 // Provide resolver functions for your schema fields
@@ -29,6 +33,11 @@ const resolvers = {
         bio: "I am a software developer and a big fan of devchallenges...",
         email: "xanthe.neal@gmail.com",
       };
+    },
+  },
+  Mutation: {
+    updateUser: (_, { user }) => {
+      return user;
     },
   },
 };
