@@ -14,12 +14,12 @@ const typeDefs = gql`
   }
 
   input UpdateUserInput {
-    photoURL: String!
+    photoURL: String
     id: ID
-    name: String!
-    bio: String!
-    phone: String!
-    email: String!
+    name: String
+    bio: String
+    phone: String
+    email: String
   }
 
   type Query {
@@ -27,7 +27,7 @@ const typeDefs = gql`
   }
 
   type Mutation {
-    updateUser(data: UpdateUserInput): User
+    updateUser(user: UpdateUserInput): User!
   }
 `;
 
@@ -46,7 +46,13 @@ const resolvers = {
   },
   Mutation: {
     updateUser: (_, { user }) => {
-      return user;
+      return {
+        name: user.name,
+        photoURL: user.photoURL,
+        bio: user.bio,
+        phone: user.phone,
+        email: user.email,
+      };
     },
   },
 };
