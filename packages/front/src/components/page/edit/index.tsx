@@ -1,4 +1,4 @@
-import { Button, Icon, TextArea, TextInput } from "shared/components/ui";
+import { Button, Icon, Label, TextArea, TextInput } from "shared/components/ui";
 import { Flex, Spacer } from "shared/components/util";
 import * as Styled from "./index.style";
 
@@ -24,13 +24,17 @@ export const EditPage: React.FC = () => {
       <Spacer height="24px" />
       <TextInput label="Phone" placeholder="Enter your phone..." />
       <Spacer height="24px" />
-      <TextInput type="email" label="Email" placeholder="Enter your email..." />
+      <Label>Email</Label>
+      {/* TODO:Auth0からデータを流し込む */}
+      <div>example@email.com</div>
       <Spacer height="24px" />
-      <TextInput
-        type="password"
-        label="Password"
-        placeholder="Enter your new password..."
-      />
+      <Label>Password</Label>
+      <Flex alignItemsCenter gap="24px">
+        <div>********</div>
+        <Button onClick={() => {}} variant="secondary">
+          Change Password
+        </Button>
+      </Flex>
       <Spacer height="24px" />
       <Button width="82px">Save</Button>
     </Styled.Main>

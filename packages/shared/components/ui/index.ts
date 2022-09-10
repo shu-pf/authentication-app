@@ -7,3 +7,4 @@ export * from "./DropDownNavigation";
 export * from "./TextButton";
 export * from "./TextInput";
 export * from "./TextArea";
+export * from "./Label";
