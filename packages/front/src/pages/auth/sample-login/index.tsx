@@ -14,7 +14,15 @@ const SignUp: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <AuthLayout>
-        <button onClick={() => loginWithRedirect()}>Log In</button>
+        <button
+          onClick={() =>
+            loginWithRedirect({
+              audience: "https://example-authentication-app-server",
+            })
+          }
+        >
+          Log In
+        </button>
       </AuthLayout>
     </>
   );

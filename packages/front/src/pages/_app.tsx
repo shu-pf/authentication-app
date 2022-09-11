@@ -16,6 +16,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <Provider value={client}>
       <Auth0Provider
+        audience="https://example-authentication-app-server"
         domain="devchallenges.jp.auth0.com"
         clientId="qW7eeaFyJAe3ZmquPkVB3vKG1pUvHjwZ"
         redirectUri="http://localhost:3000/"

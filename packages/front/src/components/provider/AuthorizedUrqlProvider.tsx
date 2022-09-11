@@ -48,7 +48,9 @@ const AuthorizedUrqlProvider: React.FC<AuthorizedUrqlProviderProps> = ({
       dedupExchange,
       cacheExchange,
       fetchOptionsExchange(async (fetchOptions: any) => {
-        const token = await getAccessTokenSilently();
+        const token = await getAccessTokenSilently({
+          audience: `https://example-authentication-app-server`,
+        });
 
         return Promise.resolve({
           ...fetchOptions,
