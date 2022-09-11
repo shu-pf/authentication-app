@@ -10,6 +10,8 @@ const UserQuery = `
   query {
     user {
       name
+      bio
+      phone
     }
   }
 `;
@@ -53,17 +55,17 @@ export const HomePage: React.FC = () => {
       <Divider />
       <Styled.Row>
         <Styled.RowTitle>NAME</Styled.RowTitle>
-        <Styled.RowContent>{data.name}</Styled.RowContent>
+        <Styled.RowContent>{data.user.name}</Styled.RowContent>
       </Styled.Row>
       <Divider />
       <Styled.Row>
         <Styled.RowTitle>BIO</Styled.RowTitle>
-        <Styled.RowContent>bio</Styled.RowContent>
+        <Styled.RowContent>{data.user.bio}</Styled.RowContent>
       </Styled.Row>
       <Divider />
       <Styled.Row>
         <Styled.RowTitle>PHONE</Styled.RowTitle>
-        <Styled.RowContent>phone</Styled.RowContent>
+        <Styled.RowContent>{data.user.phone}</Styled.RowContent>
       </Styled.Row>
       <Divider />
       <Styled.Row>
