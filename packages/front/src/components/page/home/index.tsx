@@ -1,11 +1,30 @@
 import { useAuth0 } from "@auth0/auth0-react";
 import Link from "next/link";
+import { useEffect } from "react";
 import { Button, Icon } from "shared/components/ui";
 import { Divider } from "shared/components/util";
+import { useQuery } from "urql";
 import * as Styled from "./index.style";
 
+const UserQuery = `
+  query {
+    user {
+      name
+    }
+  }
+`;
+
 export const HomePage: React.FC = () => {
+  const [result, reexecuteQuery] = useQuery({
+    query: UserQuery,
+  });
+
+  const { data, fetching, error } = result;
+
   const { user, isLoading } = useAuth0();
+
+  if (fetching) return <p>Loading...</p>;
+  if (error) return <p>Oh no... {error.message}</p>;
 
   return (
     <main>
@@ -34,7 +53,7 @@ export const HomePage: React.FC = () => {
       <Divider />
       <Styled.Row>
         <Styled.RowTitle>NAME</Styled.RowTitle>
-        <Styled.RowContent>Name</Styled.RowContent>
+        <Styled.RowContent>{data.name}</Styled.RowContent>
       </Styled.Row>
       <Divider />
       <Styled.Row>
