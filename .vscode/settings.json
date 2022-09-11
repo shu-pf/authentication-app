@@ -1,4 +1,12 @@
 {
-  "cSpell.words": ["devchallenges", "Noto", "ress", "urql", "Xanthe"],
+  "cSpell.words": [
+    "dedup",
+    "devchallenges",
+    "Noto",
+    "ress",
+    "urql",
+    "wonka",
+    "Xanthe"
+  ],
   "git.postCommitCommand": "push"
 }
